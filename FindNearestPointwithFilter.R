@@ -8,7 +8,7 @@ library(dplyr)
 # Filter 2: same Strata
 
 # Load file
-df <- read.csv("~/Library/CloudStorage/GoogleDrive-kwanyu@carbonsync.com.au/My Drive/QField/PROJ0030_ALLCEA.csv", stringsAsFactors = T)
+df <- read.csv("path/mycsv.csv", stringsAsFactors = T)
 
 df <- df %>%
   mutate(
@@ -90,4 +90,4 @@ for (i in 1:nrow(df)) {
 
 
 View(df)
-write.csv(df, "~/Library/CloudStorage/GoogleDrive-kwanyu@carbonsync.com.au/My Drive/QField/PROJ0030_ALLCEA_nearest.csv")
+write.csv(df, "path/mycsvoutput.csv")
